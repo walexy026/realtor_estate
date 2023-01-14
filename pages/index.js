@@ -49,8 +49,6 @@ const Home = ({ propertiesForSale, propertiesForRent }) => {
 
   return (
     <Box>
-      <h1>Hello World</h1>
-
       <Banner
         purpose="RENT A HOME"
         title1="Rental Homes for"
@@ -89,7 +87,7 @@ export async function getStaticProps() {
     `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-sale&hitsPerPage=10`
   );
   const propertyForRent = await fetchApi(
-    `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=10`
+    `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=12`
   );
 
   return {
