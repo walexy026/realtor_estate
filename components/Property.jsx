@@ -6,27 +6,28 @@ import Link from "next/link";
 // import { GoVerified } from "react-icons/go";
 // import millify from "millify";
 
-// const Property = ({
-//   Property: {
-//  price,
-// rentFrequency,
-// rooms,
-// title,
-// baths,
-// area,
-// agency,
-// isVerified,
-// description,
-// type,
-// purpose,
-// furnishingStatus,
-// amenities,
-// photos,
-//   },
-// }) => (
-//   <Link href={`/property/${externalID}`} passHref>
-// {title}
-//   </Link>/
-// );
+const Property = ({
+  property: {
+    price,
+    rentFrequency,
+    rooms,
+    title,
+    baths,
+    area,
+    agency,
+    isVerified,
+    description,
+    type,
+    purpose,
+    furnishingStatus,
+    amenities,
+    photos,
+    externalID,
+  },
+}) => (
+  <Link href={`/property/${externalID}`} passHref>
+    {title}
+  </Link>
+);
 
-// export default Property;
+export default Property;
