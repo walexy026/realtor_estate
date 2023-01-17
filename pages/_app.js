@@ -3,6 +3,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
 import NProgress from "nprogress";
 import Layout from "../components/Layout";
+import { Router } from "next/router";
+
 export default function App({ Component, pageProps }) {
   NProgress.configure({ showSpinner: false });
 
